@@ -1,0 +1,18 @@
+{
+    "name": "Kafka_Consumer_Offset_Monitor_WebUI",
+    "author": "0xbug",
+    "method": "GET",
+    "port": [
+        80,
+        8080
+    ],
+    "suffix": [
+        "/"
+    ],
+    "hits": [
+        "<title>Kafka Consumer Offset Monitor</title>"
+    ],
+    "document": [
+        "https://github.com/quantifind/KafkaOffsetMonitor"
+    ]
+}
