@@ -1,0 +1,13 @@
+{
+    "name": "Hadoop_Administration",
+    "method": "GET",
+    "port": [
+        50070
+    ],
+    "suffix": [
+        "/"
+    ],
+    "hits": [
+        "dfshealth.html"
+    ]
+}
