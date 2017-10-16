@@ -12,5 +12,8 @@
     "hits": [
         "MainCodisCtrl",
         "codisServerGroupMainCtl"
+    ],
+    "document": [
+        "https://github.com/CodisLabs/codis"
     ]
 }
