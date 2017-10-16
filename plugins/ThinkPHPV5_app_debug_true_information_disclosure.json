@@ -1,0 +1,13 @@
+{
+    "name": "ThinkPHPV5_app_debug_true_information_disclosure",
+    "method": "GET",
+    "port": [
+        80
+    ],
+    "suffix": [
+        "/biu"
+    ],
+    "hits": [
+        "'app_debug' => <em>true</em>"
+    ]
+}
