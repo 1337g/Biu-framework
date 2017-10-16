@@ -1,0 +1,14 @@
+{
+    "name": "LaravelDebugBar",
+    "author": "0xbug",
+    "method": "GET",
+    "port": [
+        80
+    ],
+    "suffix": [
+        "/"
+    ],
+    "hits": [
+        "PhpDebugBar.DebugBar"
+    ]
+}
