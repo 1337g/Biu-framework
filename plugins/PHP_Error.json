@@ -1,0 +1,17 @@
+{
+    "name": "PHP_Error",
+    "method": "GET",
+    "port": [
+        80,
+        8080
+    ],
+    "suffix": [
+        "/biubiubiu"
+    ],
+    "hits": [
+        "A PHP Error was encountered",
+        "htdocs",
+        "NotFoundHttpException",
+        "Http/Middleware/Request"
+    ]
+}

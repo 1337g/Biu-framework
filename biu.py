@@ -199,8 +199,9 @@ if __name__ == '__main__':
     if args.ps:
         searchstr = args.ps
         plugins = BiuPlugin(searchstr=searchstr).plugins
-        print(GREEN.format('Total:{}\n{}'.format(
-            len(plugins), [p.split('/')[2] for p in plugins])))
+        print(GREEN.format('Total:{} plugins\n'.format(len(plugins))))
+        for p in plugins:
+            print(GREEN.format(p.strip('./plugins/').strip('.json')))
         exit(0)
     searchstr = args.p
     plugins = BiuPlugin(searchstr=searchstr).plugins

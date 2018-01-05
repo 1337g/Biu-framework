@@ -5,7 +5,8 @@
         80
     ],
     "suffix": [
-        "/biu"
+        "/",
+        "/biu~"
     ],
     "hits": [
         "'app_debug' => <em>true</em>"

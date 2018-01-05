@@ -15,7 +15,7 @@
 
 ```
 {
-    "name": "Cacti_default_account_authentication",
+    "name": "Cacti_DefaultAuth",
     "author": "0xbug",
     "method": "POST",
     "port": [

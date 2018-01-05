@@ -1,5 +1,5 @@
 {
-    "name": "PRTGNetworkMonitor_default_account_authentication",
+    "name": "PRTGNetworkMonitor_DefaultAuth",
     "method": "POST",
     "port": [
         80

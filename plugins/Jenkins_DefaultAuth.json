@@ -1,5 +1,5 @@
 {
-    "name": "Jenkins_default_account_authentication",
+    "name": "Jenkins_DefaultAuth",
     "method": "POST",
     "port": [
         80,

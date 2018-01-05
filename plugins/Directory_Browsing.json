@@ -1,0 +1,20 @@
+{
+    "name": "Directory_Browsing",
+    "method": "GET",
+    "port": [
+        80,
+        8080
+    ],
+    "suffix": [
+        "/"
+    ],
+    "hits": [
+        "<title>Index of /",
+        "- /</title></head><body><H1>",
+        "Directory Listing For /",
+        "[To Parent Directory]",
+        "Folder Listing",
+        "Welcome to the directory listing",
+        "NetworkActiv-Web-Server"
+    ]
+}

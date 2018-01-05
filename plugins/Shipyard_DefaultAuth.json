@@ -1,5 +1,5 @@
 {
-    "name": "Shipyard_default_account_authentication",
+    "name": "Shipyard_DefaultAuth",
     "method": "POST",
     "port": [
         80

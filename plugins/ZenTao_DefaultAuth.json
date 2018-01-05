@@ -1,5 +1,5 @@
 {
-    "name": "ZenTao_Default_Account_Authentication",
+    "name": "ZenTao_DefaultAuth",
     "method": "POST",
     "port": [
         80

@@ -1,5 +1,5 @@
 {
-    "name": "RuijieAp_default_account_authentication",
+    "name": "RuijieAp_DefaultAuth",
     "method": "POST",
     "port": [
         80

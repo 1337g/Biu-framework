@@ -82,7 +82,7 @@ The scan report is in the `./reports` directory, formate: `today_pluginname.txt`
 
 ```
 {
-    "name": "Cacti_default_account_authentication",
+    "name": "Cacti_DefaultAuth",
     "author": "0xbug",
     "method": "POST",
     "port": [

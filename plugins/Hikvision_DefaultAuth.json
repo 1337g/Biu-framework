@@ -1,5 +1,5 @@
 {
-    "name": "Hikvision_default_account_authentication",
+    "name": "Hikvision_DefaultAuth",
     "method": "AUTH",
     "port": [
         80

@@ -1,5 +1,5 @@
 {
-    "name": "JumpServer_default_account_authentication",
+    "name": "JumpServer_DefaultAuth",
     "method": "POST",
     "port": [
         80,

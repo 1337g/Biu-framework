@@ -1,5 +1,5 @@
 {
-    "name": "Rundeck_default_account_authentication",
+    "name": "Rundeck_DefaultAuth",
     "method": "POST",
     "port": [],
     "suffix": [

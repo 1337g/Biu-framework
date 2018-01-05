@@ -1,5 +1,5 @@
 {
-    "name": "Grafana_default_account_authentication",
+    "name": "Grafana_DefaultAuth",
     "method": "POST",
     "port": [
         80,

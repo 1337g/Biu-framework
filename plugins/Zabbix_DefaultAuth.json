@@ -1,5 +1,5 @@
 {
-    "name": "Zabbix_Default_Account_Authentication",
+    "name": "Zabbix_DefaultAuth",
     "method": "POST",
     "port": [
         80,

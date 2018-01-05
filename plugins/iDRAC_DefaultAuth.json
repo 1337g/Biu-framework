@@ -1,5 +1,5 @@
 {
-    "name": "iDRAC_default_account_authentication",
+    "name": "iDRAC_DefaultAuth",
     "method": "POST",
     "port": [
         80,

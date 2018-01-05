@@ -1,5 +1,5 @@
 {
-    "name": "SonarQube_default_account_authentication",
+    "name": "SonarQube_DefaultAuth",
     "method": "POST",
     "port": [
         80,9000
