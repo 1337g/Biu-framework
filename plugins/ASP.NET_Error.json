@@ -1,0 +1,14 @@
+{
+    "name": "ASP.NET_Error",
+    "method": "GET",
+    "port": [
+        80
+    ],
+    "suffix": [
+        "/biubiubiu"
+    ],
+    "hits": [
+        "customErrors mode=\"Off",
+        "Web.Config"
+    ]
+}

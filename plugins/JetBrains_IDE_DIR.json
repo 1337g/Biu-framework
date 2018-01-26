@@ -1,0 +1,14 @@
+{
+    "name": "JetBrains_IDE_DIR",
+    "method": "GET",
+    "port": [
+        80,
+        8080
+    ],
+    "suffix": [
+        "/.idea/workspace.xml"
+    ],
+    "hits": [
+        "PROJECT_DIR"
+    ]
+}

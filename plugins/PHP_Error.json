@@ -10,6 +10,7 @@
     ],
     "hits": [
         "A PHP Error was encountered",
+        "Illuminate",
         "htdocs",
         "NotFoundHttpException",
         "Http/Middleware/Request"
