@@ -75,7 +75,7 @@ The scan report is in the `./reports` directory, formate: `today_pluginname.txt`
     "port": [],
     "suffix":[""],
     "hits":[""],
-    "document": [""]
+    "references": [""]
 }
 ```
 

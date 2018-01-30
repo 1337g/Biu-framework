@@ -74,7 +74,7 @@ python biu.py -p elasticsearch,kibana -f targets.txt
     "port": [8080], // 可能的端口
     "suffix":[""], // 目标的后缀，支持list格式
     "hits":[""], // 命中规则
-    "document":[""] //修复方案
+    "references":[""] //修复方案
 }
 ```
 
@@ -94,7 +94,7 @@ python biu.py -p elasticsearch,kibana -f targets.txt
     "hits": [
         "Percona Query Analytics"
     ],
-    "document": [
+    "references": [
         "https://www.percona.com/doc/percona-monitoring-and-management/security.html"
     ]
 }
