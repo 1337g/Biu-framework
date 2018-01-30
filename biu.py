@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# author: orange
+# author: 0xbug
 
 import argparse
 import datetime
@@ -15,6 +15,7 @@ from requests import request
 
 GREEN = '\033[0;92m{}\033[0;29m'
 RED = '\033[0;31m{}\033[0;29m'
+https_ports = [443, 8443]
 
 
 class HandleTarget(object):
@@ -73,8 +74,12 @@ class HandleTarget(object):
 
     def add_suffix(self, target, port, plugin):
         for suffix in plugin['suffix']:
-            self.tasks.append(
-                {'url': 'http://{}:{}{}'.format(target, port, suffix), 'plugin': plugin})
+            if port in https_ports:
+                self.tasks.append(
+                    {'url': 'https://{}:{}{}'.format(target, port, suffix), 'plugin': plugin})
+            else:
+                self.tasks.append(
+                    {'url': 'http://{}:{}{}'.format(target, port, suffix), 'plugin': plugin})
 
 
 class Aduit(object):
@@ -86,7 +91,8 @@ class Aduit(object):
         self.debug = debug
         self.TOO_LONG = 2097152
         self.run()
-        self.result = {'vulnerable':self.vulnerable,'url':self.url,'plugin':self.plugin.get('name')}
+        self.result = {'vulnerable': self.vulnerable,
+                       'url': self.url, 'plugin': self.plugin.get('name')}
 
     def run(self):
         try:
@@ -118,23 +124,45 @@ class Aduit(object):
                     self.content = data + '\t' + self.url + '\n'
 
     def audit_gethead(self):
-        try:
-            self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout,
-                                    headers=self.plugin.get('headers'), stream=True)
-        except:
-            self.response = request(self.plugin.get('method'), self.url, verify=True, timeout=self.timeout,
-                                    headers=self.plugin.get('headers'), stream=True)
+        if 'https' in self.url:
+            try:
+                self.response = request(self.plugin.get('method'), self.url, verify=False, timeout=self.timeout,
+                                        headers=self.plugin.get('headers'), stream=True)
+            except:
+                self.response = request(self.plugin.get('method'), self.url, verify=True, timeout=self.timeout,
+                                        headers=self.plugin.get('headers'), stream=True)
+        else:
+            try:
+                if self.plugin.get('data'):
+                    self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout,
+                                            auth=(self.plugin.get('data').get('user'), self.plugin.get('data').get('pass')))
+                else:
+                    self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout,
+                                            headers=self.plugin.get('headers'), stream=True)
+            except:
+
+                self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout,
+                                        headers=self.plugin.get('headers'), stream=True)
         if self.response.headers.get('content-length'):
             if int(self.response.headers.get('content-length')) < self.TOO_LONG:
                 content = self.response.content
 
     def audit_post(self):
+
         if self.plugin.get('headers') == {"Content-Type": "application/json"}:
-            self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout, data=json.dumps(
-                self.plugin.get('data')), headers=self.plugin.get('headers'))
+            try:
+                self.response = request(self.plugin.get('method'), self.url, verify=False, timeout=self.timeout, data=json.dumps(
+                    self.plugin.get('data')), headers=self.plugin.get('headers'))
+            except:
+                self.response = request(self.plugin.get('method'), self.url, verify=True, timeout=self.timeout, data=json.dumps(
+                    self.plugin.get('data')), headers=self.plugin.get('headers'))
         else:
-            self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout, data=self.plugin.get(
-                'data'), headers=self.plugin.get('headers'))
+            try:
+                self.response = request(self.plugin.get('method'), self.url, verify=False, timeout=self.timeout, data=self.plugin.get(
+                    'data'), headers=self.plugin.get('headers'))
+            except:
+                self.response = request(self.plugin.get('method'), self.url, verify=True, timeout=self.timeout, data=self.plugin.get(
+                    'data'), headers=self.plugin.get('headers'))
 
     def hit_where(self):
         if self.plugin.get('hit_where'):
