@@ -11,7 +11,7 @@
     "hits": [
         "Celery Flower"
     ],
-    "document": [
+    "references": [
         "http://flower.readthedocs.io/en/latest/auth.html"
     ]
 }
