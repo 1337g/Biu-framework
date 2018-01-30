@@ -11,5 +11,8 @@
     "hit_where": "headers.Set-Cookie",
     "hits": [
         "BIGipServer"
+    ],
+    "references": [
+        "https://support.f5.com/csp/article/K7784?sr=14607726"
     ]
 }

@@ -11,7 +11,7 @@
     "hits": [
         "Percona Query Analytics"
     ],
-    "document": [
+    "references": [
         "https://www.percona.com/doc/percona-monitoring-and-management/security.html"
     ]
 }

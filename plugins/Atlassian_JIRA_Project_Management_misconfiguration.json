@@ -1,0 +1,15 @@
+{
+    "name": "Atlassian_JIRA_Project_Management_misconfiguration",
+    "method": "GET",
+    "port": [
+        80,
+        443
+    ],
+    "suffix": [
+        "/",
+        "/projects"
+    ],
+    "hits": [
+        "browse_link"
+    ]
+}

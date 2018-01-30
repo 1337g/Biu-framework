@@ -14,5 +14,8 @@
         "htdocs",
         "NotFoundHttpException",
         "Http/Middleware/Request"
+    ],
+    "references": [
+        "https://laravel.com/docs/5.5/errors#custom-http-error-pages"
     ]
 }
