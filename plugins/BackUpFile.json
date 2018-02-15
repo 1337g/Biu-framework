@@ -1,0 +1,14 @@
+{
+    "name": "BackUpFile",
+    "method": "GET",
+    "port": [
+        80
+    ],
+    "suffix": [
+        "/api.php~",
+        "/include/config.php~"
+    ],
+    "hits": [
+        "<?php"
+    ]
+}

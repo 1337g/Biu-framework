@@ -13,7 +13,7 @@
         "MainCodisCtrl",
         "codisServerGroupMainCtl"
     ],
-    "document": [
+    "references": [
         "https://github.com/CodisLabs/codis"
     ]
 }
