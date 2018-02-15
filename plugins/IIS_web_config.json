@@ -1,0 +1,14 @@
+{
+    "name": "IIS_web_config",
+    "method": "GET",
+    "port": [
+        80,
+        8080
+    ],
+    "suffix": [
+        "/web.config"
+    ],
+    "hits": [
+        "<system.webServer>"
+    ]
+}
