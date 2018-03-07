@@ -4,6 +4,7 @@
     "port": [
         80
     ],
+    "dork": "title=Solr Admin",
     "suffix": [
         "/solr/admin/info/system?wt=json",
         "/admin/info/system?wt=json"

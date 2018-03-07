@@ -1,13 +1,17 @@
 {
-    "name": "axis_local_file_include",
+    "name": "Axis2_Local_File_Inclusion",
     "method": "GET",
     "port": [
         8080
     ],
+    "dork":"apps=Java",
     "suffix": [
         "/axis2/services/listServices"
     ],
     "hits": [
         "Available services"
+    ],
+    "references": [
+        "https://www.exploit-db.com/exploits/12721/"
     ]
 }

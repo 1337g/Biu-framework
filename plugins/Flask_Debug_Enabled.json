@@ -1,12 +1,13 @@
 {
-    "name": "flask_debug",
+    "name": "Flask_Debug_Enabled",
     "method": "GET",
     "port": [
         80,
         5000
     ],
+    "dork": "Flask",
     "suffix": [
-        "/orangebiu"
+        "/biubiu"
     ],
     "hits": [
         "werkzeug.exceptions.NotFound"

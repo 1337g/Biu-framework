@@ -1,9 +1,10 @@
 {
-    "name": "axis2_info",
+    "name": "Axis2_Information_Disclosure",
     "method": "GET",
     "port": [
         8080
     ],
+    "dork": "apps=Java",
     "suffix": [
         "/axis2/axis2-web/HappyAxis.jsp"
     ],

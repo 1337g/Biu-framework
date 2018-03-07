@@ -1,10 +1,11 @@
 {
-    "name": "Atlassian_JIRA_Project_Management_misconfiguration",
+    "name": "Atlassian_JIRA_Project_Management_Misconfiguration",
     "method": "GET",
     "port": [
         80,
         443
     ],
+    "dork": "apps=Atlassian Jira",
     "suffix": [
         "/",
         "/projects"

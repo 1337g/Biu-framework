@@ -1,9 +1,12 @@
 {
-    "name": "jenkins_command",
+    "name": "Jenkins_Command_Accessible",
     "method": "GET",
     "port": [
-        80,443,8080
+        80,
+        443,
+        8080
     ],
+    "dork": "apps=Jenkins",
     "suffix": [
         "/script"
     ],

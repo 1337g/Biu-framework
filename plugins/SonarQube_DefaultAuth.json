@@ -2,8 +2,10 @@
     "name": "SonarQube_DefaultAuth",
     "method": "POST",
     "port": [
-        80,9000
+        80,
+        9000
     ],
+    "dork": "title=SonarQube",
     "suffix": [
         "/sessions/login"
     ],

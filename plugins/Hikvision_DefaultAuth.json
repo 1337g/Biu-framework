@@ -4,13 +4,16 @@
     "port": [
         80
     ],
+    "dork": "body=doc/page/login\\.asp",
     "suffix": [
         "/PSIA/Custom/SelfExt/userCheck"
     ],
-    "data": [{
-        "user": "admin",
-        "pass": "12345"
-    }],
+    "data": [
+        {
+            "user": "admin",
+            "pass": "12345"
+        }
+    ],
     "hits": [
         "<statusValue>200</statusValue>"
     ]

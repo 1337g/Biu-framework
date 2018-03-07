@@ -5,6 +5,7 @@
         80,
         9000
     ],
+    "dork": "title=SonarQube",
     "suffix": [
         "/coding_rules"
     ],

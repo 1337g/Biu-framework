@@ -1,10 +1,11 @@
 {
-    "name": "Haber_self_registration_on",
+    "name": "Haber_self_registration_Enabled",
     "method": "GET",
     "port": [
         80,
         443
     ],
+    "dork": "title=Harbor",
     "suffix": [
         "/api/systeminfo",
         "/"

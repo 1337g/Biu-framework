@@ -2,12 +2,16 @@
     "name": "Apache_Subversion_Module_Metadata_Accessible",
     "method": "GET",
     "port": [
-        80,443
+        80,
+        443
     ],
+    "dork": "url=http",
     "suffix": [
-        "/.svn/all-wcprops"
+        "/.svn/all-wcprops",
+        "/.svn/entries"
     ],
     "hits": [
-        "svn:wc:ra_dav:version-url"
+        "svn:wc:ra_dav:version-url",
+        "\nfile\n\n\n\n\n"
     ]
 }

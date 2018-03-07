@@ -1,10 +1,11 @@
 {
-    "name": "Tomcat_manage_weakpwd",
+    "name": "Tomcat_Manager_Weakpwd",
     "method": "AUTH",
     "port": [
         80,
         8080
     ],
+    "dork": "body=successfully installed Tomcat",
     "suffix": [
         "/manager/html"
     ],

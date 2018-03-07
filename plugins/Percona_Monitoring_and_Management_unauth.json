@@ -5,6 +5,7 @@
     "port": [
         80
     ],
+    "dork": "title=Percona Monitoring and Management",
     "suffix": [
         "/qan/"
     ],

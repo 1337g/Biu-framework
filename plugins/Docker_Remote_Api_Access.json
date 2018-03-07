@@ -1,9 +1,10 @@
 {
-    "name": "docker_remote_api",
+    "name": "Docker_Remote_Api_Access",
     "method": "GET",
     "port": [
         2375
     ],
+    "dork":"url=:2375",
     "suffix": [
         "/info"
     ],

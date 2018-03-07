@@ -4,6 +4,7 @@
     "port": [
         80
     ],
+    "dork": "title=shipyard",
     "suffix": [
         "/auth/login"
     ],

@@ -1,9 +1,10 @@
 {
-    "name": "ThinkPHPV5_app_debug_true_information_disclosure",
+    "name": "ThinkPHPV5_app_debug_Information_Disclosure",
     "method": "GET",
     "port": [
         80
     ],
+    "dork": "apps=ThinkPHP",
     "suffix": [
         "/",
         "/biu~"

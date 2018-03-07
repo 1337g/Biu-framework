@@ -5,6 +5,7 @@
         80,
         8080
     ],
+    "dork": "title=\\| JumpServer",
     "suffix": [
         "/login/"
     ],

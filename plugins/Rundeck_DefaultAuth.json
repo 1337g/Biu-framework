@@ -2,6 +2,7 @@
     "name": "Rundeck_DefaultAuth",
     "method": "POST",
     "port": [],
+    "dork": "title=Rundeck",
     "suffix": [
         "/user/j_security_check"
     ],

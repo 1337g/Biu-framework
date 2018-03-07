@@ -5,6 +5,7 @@
         80,
         8080
     ],
+    "dork": "headers=BIGipServer",
     "suffix": [
         "/"
     ],

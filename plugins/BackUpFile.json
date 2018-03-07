@@ -4,6 +4,7 @@
     "port": [
         80
     ],
+    "dork": "url=http",
     "suffix": [
         "/api.php~",
         "/include/config.php~"

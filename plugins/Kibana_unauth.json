@@ -5,6 +5,7 @@
         80,
         5601
     ],
+    "dork": "apps=Kibana",
     "suffix": [
         "/status"
     ],

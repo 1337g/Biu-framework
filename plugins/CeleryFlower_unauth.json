@@ -5,11 +5,12 @@
     "port": [
         5555
     ],
+    "dork": "title=Flower&apps=TornadoServer",
     "suffix": [
-        "/monitor"
+        ""
     ],
     "hits": [
-        "Celery Flower"
+        "https://github.com/mher/flower"
     ],
     "references": [
         "http://flower.readthedocs.io/en/latest/auth.html"

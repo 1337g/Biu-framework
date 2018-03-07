@@ -7,6 +7,7 @@
         8080,
         8090
     ],
+    "dork": "title=RockMongo",
     "suffix": [
         "/index.php?action=login.index"
     ],

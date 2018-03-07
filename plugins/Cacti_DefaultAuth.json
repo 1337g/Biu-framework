@@ -4,6 +4,7 @@
     "port": [
         80
     ],
+    "dork":"title=Login to Cacti",
     "suffix": [
         "/index.php",
         "/cacti/index.php"

@@ -5,6 +5,7 @@
         80,
         443
     ],
+    "dork": "body=pam_int_ldap_enable_mode",
     "suffix": [
         "/data/login"
     ],

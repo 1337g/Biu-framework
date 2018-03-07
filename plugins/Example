@@ -2,6 +2,9 @@
     "name":"",
     "method": "GET",
     "port":[80],
+    "dork":"",
     "suffix":[""],
-    "hits":[""]
+    "hits":[""],
+    "hit_where":"",
+    "references":""
 }

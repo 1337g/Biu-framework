@@ -5,6 +5,7 @@
         80,
         8080
     ],
+    "dork": "apps=Java|PHP",
     "suffix": [
         "/.idea/workspace.xml"
     ],
