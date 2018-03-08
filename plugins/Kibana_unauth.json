@@ -1,5 +1,5 @@
 {
-    "name": "kibana_unauth",
+    "name": "Kibana_unauth",
     "method": "GET",
     "port": [
         80,
