@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse, abort, Api
 from flask import Flask,jsonify, request
-from biu import Aduit,HandleTarget,BiuPlugin
+from biu import Audit,HandleTarget,BiuPlugin
 import sys
 app = Flask(__name__)
 api = Api(app, catch_all_404s=True)
@@ -28,7 +28,7 @@ class Scan(Resource):
                                iprange=iprange, targets_file=targets_file)
         results = []
         for task in targets.tasks:
-            task = Aduit(task.get('url'),
+            task = Audit(task.get('url'),
                                  task.get('plugin'), timeout, debug)
             results.append(task.result)
         response = {

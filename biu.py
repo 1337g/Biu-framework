@@ -82,7 +82,7 @@ class HandleTarget(object):
                     {'url': 'http://{}:{}{}'.format(target, port, suffix), 'plugin': plugin})
 
 
-class Aduit(object):
+class Audit(object):
     def __init__(self, url, plugin, timeout=3, debug=0):
         self.url = url
         self.plugin = plugin
@@ -243,7 +243,7 @@ if __name__ == '__main__':
     try:
         p = Pool(100)
         for task in targets.tasks:
-            p.apply_async(Aduit, args=(task.get('url'),
+            p.apply_async(Audit, args=(task.get('url'),
                                        task.get('plugin'), timeout, debug))
         p.close()
         p.join()
