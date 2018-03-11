@@ -113,7 +113,7 @@ class Audit(object):
     def audit_auth(self):
         for data in self.plugin.get('data'):
             self.vulnerable = False
-            self.response = request(self.plugin.get('method'), self.url, timeout=self.timeout,
+            self.response = request('GET', self.url, timeout=self.timeout,
                                     auth=(data['user'], data['pass']))
             if 'hits' not in self.plugin.keys():
                 response_code = self.response.status_code
