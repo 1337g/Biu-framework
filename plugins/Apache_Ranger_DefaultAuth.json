@@ -2,7 +2,8 @@
     "name": "Apache_Ranger_DefaultAuth",
     "method": "POST",
     "port": [
-        80
+        80,
+        6080
     ],
     "dork": "title=Ranger - Sign In",
     "suffix": [
