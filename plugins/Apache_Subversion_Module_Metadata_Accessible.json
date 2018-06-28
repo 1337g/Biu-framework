@@ -7,11 +7,9 @@
     ],
     "dork": "url=http",
     "suffix": [
-        "/.svn/all-wcprops",
         "/.svn/entries"
     ],
     "hits": [
-        "svn:wc:ra_dav:version-url",
         "\nfile\n\n\n\n\n"
     ]
 }
